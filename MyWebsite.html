@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Pessoal</title>
+    <style>
+        html, body {
+            height: 100%; /* Garante que o body ocupe a altura total */
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column; /* Coloca os elementos em uma coluna */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://wallpapercave.com/wp/wp9633207.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            position: relative;
+        }
+
+        /* Reduz a opacidade da camada de escurecimento da imagem de fundo */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            z-index: 2;
+            flex-grow: 1; /* Faz o container crescer e ocupar o espaço restante */
+        }
+
+        header {
+            background: rgba(51, 51, 51, 0.8); /* Fundo escuro com transparência */
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            background: rgba(0, 0, 0, 0.6); /* Fundo preto transparente */
+            padding: 15px;
+            border-radius: 8px;
+            color: white; /* Altera a cor do texto para branco para contraste */
+        }
+
+        h1, h2 {
+            color: #fff; /* Cor do texto para o header */
+        }
+
+        .tasks ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .tasks li {
+            background: rgba(0, 0, 0, 0.4); /* Fundo preto com menos transparência para as tarefas */
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .about {
+            display: flex;
+            align-items: center;
+        }
+
+        .about img {
+            max-width: 100px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .about div {
+            max-width: 600px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(51, 51, 51, 0.8); /* Fundo escuro com transparência */
+            color: white;
+            border-radius: 4px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .icons img {
+            width: 50px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site Pessoal</h1>
+    </header>
+    <div class="container">
+        <section class="section about">
+            <img src="https://i.pinimg.com/originals/be/e2/ca/bee2caf235f7cacdd889fdd32e72caa2.jpg" alt="Sobre Mim">
+            <div>
+                <h2>Sobre Mim</h2>
+                <p>Olá, meu nome é Carlos Eduardo. Sou estudante de Informática do 
+                    Instituto Superior de Educação do Rio de Janeiro. Aqui você encontrará minhas tarefas semanais e mais informações sobre mim.</p>
+            </div>
+        </section>
+
+        <section class="section tasks">
+            <h2>Tarefas Semanais</h2>
+            <ul>
+                <li>Segunda-feira: [Tarefa]</li>
+                <li>Terça-feira: [Tarefa]</li>
+                <li>Quarta-feira: [Tarefa]</li>
+                <li>Quinta-feira: [Tarefa]</li>
+                <li>Sexta-feira: [Tarefa]</li>
+                <li>Sábado: [Tarefa]</li>
+                <li>Domingo: [Tarefa]</li>
+            </ul>
+        </section>
+
+        <section class="section icons">
+            <h2>Ícones do Jujutsu Kaisen</h2>
+            <img src="https://uploads.spiritfanfiction.com/historias/capitulos/202304/feroz-como-uma-predador-toji-fushiguro-24805793-150420232234.jpg" alt="Ícone 1">
+            <img src="https://64.media.tumblr.com/90623572d0961218670cd8bafaafbc0d/04db36e4f2ec480d-03/s1280x1920/268f5dc789832452cc9621b478169afe1e0ce377.jpg" alt="Ícone 2">
+            <img src="https://uploads.spiritfanfiction.com/historias/capitulos/202402/yuji-itadori-em-sua-nova-missao-no-inferno-25441033-140220242315.jpg" alt="Ícone 3">
+        </section>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Meu Site Pessoal. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
